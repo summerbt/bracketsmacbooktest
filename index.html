@@ -5,6 +5,8 @@
     <title>Geolocation</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <style>
         html,
         body {
@@ -20,6 +22,10 @@
 </head>
 
 <body>
+    <form id="search-term">
+        <input id="query" type="text"></input>
+        <input id="search-term" type="submit" value="Search"></input>
+    </form>
     <div id="map"></div>
     <script>
         // Note: This example requires that you consent to location sharing when
@@ -67,32 +73,8 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGCk4sLjlMv_aK2gOTEPDlCoAekoOyI1A&signed_in=true&callback=initMap" async defer>
     </script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
-
-
-<!--
-<!DOCTYPE html>
-
-<html>
-
-<head>
-    <title>Think Tube 2</title>
-     Latest compiled and minified CSS
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-</head>
-
-<body>
-    <form id="search-term">
-        <input id="query" type="text"></input>
-        <input id="search-term" type="submit" value="Search"></input>
-    </form>
-    <div id="search-results">
-    </div>
-    <script src="http://code.jquery.com/jquery.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-</body>
-
-</html>
--->
